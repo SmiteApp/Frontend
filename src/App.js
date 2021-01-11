@@ -33,6 +33,7 @@ function App() {
   
   </Route> 
   <Route exact path="/gods">
+  <NavBar/>
     <div className="App">
       <Searchbar query = {query} setQuery={setQuery}/>
       <GodList query = {query} 
