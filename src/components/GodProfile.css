@@ -1,0 +1,16 @@
+.GodCardImg{
+
+  
+}
+
+.GodProfileContainer{
+display:flex;
+flex:wrap;
+background-color:#071325;
+height: 100vh;
+
+}
+
+.GodProfileInfo{
+color:red;
+}
