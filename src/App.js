@@ -1,16 +1,17 @@
 
 import React, { useState, useEffect } from "react";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
-import GodList from "./components/GodList"
-import Searchbar from "./components/Searchbar"
-import GodProfile from "./components/GodProfile"
+import GodList from "./components/Gods/GodList"
+import Searchbar from "./components/Gods/Searchbar"
+import GodProfile from "./components/Gods/GodProfile"
+import NavBar from "./components/nav/navbar"
 import "./App.css"
 import axios from "axios";
 function App() {
   const [god, setGod] = useState([])
-  const [godId, setGodId] = useState("")
+ 
   const [query, setQuery] = useState("");
-  const [godRoute, setGodRoute] = useState([])
+
 
 
  
@@ -22,13 +23,22 @@ function App() {
 
 <Router>
   <Switch>
+
   <Route exact path="/">
+    <div className="App">
+      
+      <NavBar/>
+      
+    </div>
+  
+  </Route> 
+  <Route exact path="/gods">
     <div className="App">
       <Searchbar query = {query} setQuery={setQuery}/>
       <GodList query = {query} 
       god={god}
       setGod={setGod}
-      setGodId={setGodId}
+     
       />
       
     </div>
@@ -36,7 +46,7 @@ function App() {
   </Route>
 
   
-     <Route path = "/:id" >
+     <Route path = "/gods/:id" >
   <div>
 <GodProfile/>
 

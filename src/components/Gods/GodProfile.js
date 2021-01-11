@@ -15,7 +15,7 @@ const GodProfile = ({gods}) => {
 
 
        axios
-        .get(`http://localhost:4000/gods/${id}`)
+        .get(`https://smite-backend.herokuapp.com/gods/${id}`)
         .then(response => {
         setGod(response.data)
           console.log(response.data);

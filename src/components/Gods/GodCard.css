@@ -7,6 +7,7 @@
     
 }
 
+
 .GodTextContainer {
     display: flex;
     flex-direction: column;
@@ -17,18 +18,27 @@
     width: 100%;
     word-wrap: break-word
 }
+
+
 .GodContainer {
     background-color:#040913;
     width: 12rem;
     height: 16rem;
-    margin: 2rem;
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: center;
     align-items: flex-end;
-    border: .1rem solid #49422b
+    border: .1rem solid #49422b;
+    margin: 1rem;
+    
     
 
+}
+
+.GodContainer:hover {
+    border: solid #4598dc 2px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
@@ -40,7 +50,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     
     
 }

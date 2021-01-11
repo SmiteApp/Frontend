@@ -1,0 +1,12 @@
+.NavContainer {
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 0;
+  
+}
+
+.NavContainer div {
+    margin: 0 1rem;
+    
+}

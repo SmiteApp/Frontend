@@ -5,7 +5,7 @@ import GodCard from "./GodCard"
 
 
 
-export default function GodList({query, god, setGod, setGodId}) {
+export default function GodList({query, god, setGod, }) {
 
 
   
@@ -13,7 +13,7 @@ export default function GodList({query, god, setGod, setGodId}) {
 
   useEffect(() => {
     
-    axios.get('http://localhost:4000/gods')
+    axios.get('https://smite-backend.herokuapp.com/gods')
       .then(response => {
         console.log(response.data);
         const characters = response.data.filter(character =>
@@ -35,7 +35,7 @@ export default function GodList({query, god, setGod, setGodId}) {
       {god.map(gods => {
         
 
-        return <GodCard setGodId= {setGodId} gods={gods} key={gods.id} />
+        return <GodCard gods={gods} key={gods.id} />
         
         
       })}
