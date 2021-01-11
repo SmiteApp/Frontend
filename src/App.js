@@ -49,6 +49,7 @@ function App() {
   
      <Route path = "/gods/:id" >
   <div>
+  <NavBar/>
 <GodProfile/>
 
 </div>

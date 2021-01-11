@@ -9,12 +9,7 @@ import {useHistory} from 'react-router-dom';
 
 
 const GodCard = ({ gods, setGodId}) => {
-  // const handleClick = () => {
-     
-  //   console.log("Clicked", gods.Name);
-  //   setGodId(gods)
-    
-  // }
+
 
   const history = useHistory();
   const handleOnClick = useCallback(() => history.push(`/gods/${gods.Name.toLowerCase().split(" ").join("")}`), [gods, history]);

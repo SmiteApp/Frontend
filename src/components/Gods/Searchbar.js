@@ -17,6 +17,7 @@ function Searchbar({ query, setQuery }) {
                     onChange={handleInputChange}
                     value={query}
                     name="name"
+                    id="name"
                     tabIndex="0"
                     className="prompt"
                     placeholder="Search Gods..."
