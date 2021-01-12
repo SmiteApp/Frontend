@@ -1,7 +1,7 @@
 import React from "react";
 import "./Searchbar.css"
 
-function Searchbar({ query, setQuery }) {
+function GodSearchbar({ query, setQuery }) {
 
 
     const handleInputChange = event => {
@@ -29,4 +29,4 @@ function Searchbar({ query, setQuery }) {
     )
 }
 
-export default Searchbar
+export default GodSearchbar

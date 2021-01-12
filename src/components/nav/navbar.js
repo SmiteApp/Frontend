@@ -14,7 +14,9 @@ const Navbar = () => {
         <div className="NavContainer">
             <div>
                 <Link to="/gods">Gods</Link>
+                <Link to="/player">Find Player</Link>
             </div>
+            
             <div>
                 <Button variant="info" onClick={handleShow}>
                     Sign In

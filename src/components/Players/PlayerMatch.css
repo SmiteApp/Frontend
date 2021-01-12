@@ -1,0 +1,44 @@
+.loss {
+    color:red
+}
+
+.win {
+    color: green
+}
+
+.matchDiv {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.MatchContainer {
+    width: 100%;
+    border:#49422b 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    text-align: center;
+}
+.matchFirst {
+margin: .5rem;
+max-width: 128px;
+}
+
+.matchSecond {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  height: 174px;
+    width: 80px;
+    margin: .5rem;
+}
+
+
+.matchThird {
+    height: 174px;
+    max-width: 75px;
+    margin: .5rem;
+    
+}
